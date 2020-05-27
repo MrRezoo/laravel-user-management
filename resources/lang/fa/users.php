@@ -32,5 +32,6 @@ return [
 	'persian name' => 'نام فارسی',
 	'permission name' => 'نام دسترسی',
 	'permission persian name' => 'نام فارسی دسترسی',
-	'edit permission' => 'ویرایش دسترسی'
+	'edit permission' => 'ویرایش دسترسی',
+    'manage roles' => 'مدیریت نقش ها'
 ];

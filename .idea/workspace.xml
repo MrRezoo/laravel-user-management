@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc08a523-7bd5-4a36-aaff-69aa1820efe0" name="Default Changelist" comment="" />
+    <list default="true" id="bc08a523-7bd5-4a36-aaff-69aa1820efe0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/PermissionServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Permission/Traits/HasPermissions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Permission/Traits/HasRoles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_23_222838_create_permissions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_23_223254_create_permission_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_23_233604_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_23_233709_create_permission_role_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_23_233805_create_role_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/layouts/loader.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/roles/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/roles/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/user-management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/user-management.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fa/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/alerts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/alerts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +42,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,21 +176,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/panel/roles" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/panel/roles" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/Http/Middleware" />
+      <recent name="$PROJECT_DIR$/database/migrations" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/panel" />
       <recent name="$PROJECT_DIR$/resources/views/panel/layouts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
-      <recent name="$PROJECT_DIR$/database/migrations" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/Services/Permission/Traits" />
-      <recent name="$PROJECT_DIR$/app/Providers" />
     </key>
   </component>
   <component name="RunManager">
@@ -181,7 +225,10 @@
       <workItem from="1590259073414" duration="422000" />
       <workItem from="1590320984271" duration="10245000" />
       <workItem from="1590488183913" duration="13876000" />
-      <workItem from="1590508274433" duration="1423000" />
+      <workItem from="1590508274433" duration="9924000" />
+      <workItem from="1590556576177" duration="1558000" />
+      <workItem from="1590560229098" duration="2133000" />
+      <workItem from="1590563259328" duration="1767000" />
     </task>
     <servers />
   </component>
@@ -197,10 +244,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="193" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1590228505034" />
-    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590505290853">
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590520611650">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1590505290853" />
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1590520611650" />
+    <state width="1396" height="110" key="GridCell.Tab.0.bottom" timestamp="1590563249697">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="110" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590563249697" />
+    <state width="1396" height="110" key="GridCell.Tab.0.center" timestamp="1590563249696">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="110" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590563249696" />
+    <state width="1396" height="110" key="GridCell.Tab.0.left" timestamp="1590563249695">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="110" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590563249695" />
+    <state width="1396" height="110" key="GridCell.Tab.0.right" timestamp="1590563249696">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="110" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590563249696" />
     <state x="308" y="192" key="IDE.errors.dialog" timestamp="1590254551024">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -217,9 +280,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590508833084" />
-    <state x="291" y="159" width="858" height="582" key="find.popup" timestamp="1590341077880">
+    <state x="291" y="159" width="858" height="582" key="find.popup" timestamp="1590520309480">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="291" y="159" width="858" height="582" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1590341077880" />
+    <state x="291" y="159" width="858" height="582" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1590520309480" />
   </component>
 </project>

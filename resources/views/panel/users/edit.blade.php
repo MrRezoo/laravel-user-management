@@ -18,7 +18,8 @@
         <div class="edit-profile">
             <div class="row">
                 <div class="col-lg-12">
-                    <form class="card">
+                    <form class="card" method="post" action="{{route('users.update',$user->id)}}">
+                        @csrf
                         <div class="card-header">
                             <h4 class="card-title mb-0">ویرایش پروفایل</h4>
                             <div class="card-options"><a class="card-options-collapse" href="#"
@@ -61,14 +62,16 @@
                                         <input class="form-control" type="tel" id="phone_number">
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-md-6 was-validated">
+                                <div class="col-sm-6 col-md-6 ">
                                     <label class="form-label">@lang('users.add role to user')</label>
                                     <hr>
                                     <div class="form-group">
                                         @forelse ($roles as $role)
                                             <div class="custom-control custom-checkbox custom-control-inline">
-                                                <input type="checkbox" name='roles[]' value="{{$role->name}}" class="custom-control-input" id="{{'role' . $role->id}}">
-                                                <label class="custom-control-label" for="{{'role' . $role->id}}">{{$role->persian_name}}</label>
+                                                <input type="checkbox" name='roles[]' value="{{$role->name}}" {{$user->roles->contains($role) ? 'checked' : ''}}
+                                                       class="custom-control-input" id="{{'role' . $role->id}}">
+                                                <label class="custom-control-label"
+                                                       for="{{'role' . $role->id}}">{{$role->persian_name}}</label>
                                             </div>
                                         @empty
                                             <p>
@@ -81,15 +84,18 @@
 
                                     <label class="form-label">@lang('users.add permission to user')</label>
                                     <hr>
-                                    <div class="form-group">
+                                    <div class="form-group ">
                                         @forelse ($permissions as $permission)
                                             <div class="custom-control custom-checkbox custom-control-inline">
-                                                <input type="checkbox" name='permissions[]' value="{{$permission->name}}" class="custom-control-input" id="{{'permission' . $permission->id}}">
-                                                <label class="custom-control-label" for="{{'permission' . $permission->id}}">{{$permission->persian_name}}</label>
+                                                <input type="checkbox" name='permissions[]' {{$user->permissions->contains($permission) ? 'checked' : ''}}
+                                                       value="{{$permission->name}}" class="custom-control-input"
+                                                       id="{{'permission' . $permission->id}}">
+                                                <label class="custom-control-label"
+                                                       for="{{'permission' . $permission->id}}">{{$permission->persian_name}}</label>
                                             </div>
                                         @empty
                                             <p>
-                                                @lang('users.there are not any role')
+                                                @lang('users.there are not any permission')
                                             </p>
                                         @endforelse
                                     </div>
@@ -97,7 +103,7 @@
                             </div>
                         </div>
                         <div class="card-footer text-right">
-                            <button class="btn btn-primary" type="submit">بروزرسانی پروفایل</button>
+                            <button class="btn btn-primary" type="submit">@lang('users.update')</button>
                         </div>
                     </form>
                 </div>

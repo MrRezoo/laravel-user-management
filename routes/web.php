@@ -7,7 +7,7 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
-Route::group(['prefix' => 'panel', 'middleware' => 'can:show panel'], function () {
+Route::group(['prefix' => 'panel','middleware'=>'role:admin'], function () {
     Route::get('users', 'UserController@index')->name('users.index');
     Route::get('users/{user}/edit', 'UserController@edit')->name('users.edit');
     Route::post('users/{user}/edit', 'UserController@update')->name('users.update');

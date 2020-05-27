@@ -13,7 +13,7 @@ class UserController extends Controller
     {
         $users = User::with('roles')->get();
 
-        return view('users.list', compact('users'));
+        return view('panel.users.list', compact('users'));
     }
 
 
@@ -22,7 +22,7 @@ class UserController extends Controller
         $permissions = Permission::all();
         $roles = Role::all();
         $user->load('roles', 'permissions');
-        return view('users.edit', compact('permissions', 'roles', 'user'));
+        return view('panel.users.edit', compact('permissions', 'roles', 'user'));
     }
 
 

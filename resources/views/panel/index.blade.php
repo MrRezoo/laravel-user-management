@@ -16,11 +16,7 @@
 </head>
 <body main-theme-layout="rtl">
 <!-- Loader starts-->
-<div class="loader-wrapper">
-    <div class="loader bg-white">
-        <div class="whirly-loader"></div>
-    </div>
-</div>
+
 <!-- Loader ends-->
 <!-- page-wrapper Start-->
 <div class="page-wrapper">
@@ -51,6 +47,7 @@
                 </div>
             </div>
             <!-- Container-fluid starts-->
+        @include('partials.alerts')
         @yield('content')
         <!-- Container-fluid Ends-->
         </div>
